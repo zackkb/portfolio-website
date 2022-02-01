@@ -1,6 +1,6 @@
 * {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -94,8 +94,8 @@ button:focus,
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -104,26 +104,26 @@ button:focus,
 
 .page-header__item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 200px;
-            flex: 0 1 200px;
+    -ms-flex: 0 1 200px;
+    flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     text-align: right;
 }
 
 .navigation-list {
     list-style-type: none;
 }
-  
+
 .navigation-list li {
     display: inline-block;
     margin-left: 15px;
 }
-  
+
 .navigation-list li .navigation-list__item--active {
     text-decoration: none;
 }
@@ -242,79 +242,79 @@ button:focus,
 
 .sun {
     -webkit-animation-duration: 4s;
-            animation-duration: 4s;
+    animation-duration: 4s;
     -webkit-animation-name: color-change;
-            animation-name: color-change;
+    animation-name: color-change;
     -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-            animation-direction: alternate;
+    animation-direction: alternate;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-timing-function: linear;
 }
 
 @-webkit-keyframes cloud-move {
     from {
         -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
+        transform: translate(0, 50px);
     }
 
     to {
         -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
+        transform: translate(200px, 50px);
     }
 }
 
 @keyframes cloud-move {
     from {
         -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
+        transform: translate(0, 50px);
     }
 
     to {
         -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
+        transform: translate(200px, 50px);
     }
 }
 
 .cloud-front {
     -webkit-animation-duration: 30s;
-            animation-duration: 30s;
+    animation-duration: 30s;
     -webkit-animation-name: cloud-move;
-            animation-name: cloud-move;
+    animation-name: cloud-move;
     -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-            animation-direction: alternate;
+    animation-direction: alternate;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-timing-function: linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
     from {
         -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
+        transform: translate(446px, 48px);
     }
 
     to {
         -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
+        transform: translate(100px, 48px);
     }
 }
 
 @keyframes cloud-move-reverse {
     from {
         -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
+        transform: translate(446px, 48px);
     }
 
     to {
         -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
+        transform: translate(100px, 48px);
     }
 }
 
 .cloud-back {
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
+    animation: 34s cloud-move-reverse infinite alternate linear;
 }
