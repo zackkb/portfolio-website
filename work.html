@@ -1,98 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <title>Work | Zach Briggs</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-32x32.png"
+      sizes="32x32"
+    />
 
-<body>
-    <header class="page-header">
-        <a href="index.html">
-            <img src="img/logo.png" alt="logo" class="page-header__item">
-        </a>
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-            </ul>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
+
+  <body class="l-body">
+    <div class="l-wrapper">
+      <header class="b-site-header">
+        <span class="b-site-logo">ZB</span>
+        <nav class="b-site-nav">
+          <a class="b-site-nav__link" href="index.html">Home</a>
+          <a class="b-site-nav__link" href="about.html">About</a>
+          <a class="b-site-nav__link" href="work.html">Work</a>
+          <a class="b-site-nav__link" href="contact.html">Contact</a>
         </nav>
-    </header>
+      </header>
 
-    <main class="work">
-        <section>
-            <h1>Work</h1>
-            <div class="grid">
-                <div class="grid__item">
-                    <h2>Future Project</h2>
-                    <p>
-                        Future project text.
-                    </p>
-                    <a href="#">See project on GitHub</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Future Project</h2>
-                    <p>
-                        Future project text.
-                    </p>
-                    <a href="#">See project on GitHub</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Future Project</h2>
-                    <p>
-                        Future project text.
-                    </p>
-                    <a href="#">See project on GitHub</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Future Project</h2>
-                    <p>
-                        Future project text.
-                    </p>
-                    <a href="#">See project on GitHub</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Future Project</h2>
-                    <p>
-                        Future project text.
-                    </p>
-                    <a href="#">See project on GitHub</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Future Project</h2>
-                    <p>
-                        Future project text.
-                    </p>
-                    <a href="#">See project on GitHub</a>
-                </div>
+      <main role="main" class="l-main b-page">
+        <h1 class="b-page__title">Selected Work</h1>
+        <div class="b-page__content">
+          <article class="b-work">
+            <header class="b-work__header">
+              <h2 class="b-work__title">Meet</h2>
+
+              <ul class="b-tags-list">
+                <li class="b-tag">React</li>
+
+                <li class="b-tag">CSS</li>
+
+                <li class="b-tag">Jest/Enzyme</li>
+
+                <li class="b-tag">AWS</li>
+
+                <li class="b-tag">Google API</li>
+
+                <li class="b-tag">JavaScript</li>
+              </ul>
+            </header>
+
+            <img
+              src="img/meet.png"
+              alt="An overview of Meet"
+              width="100%"
+              height="45%"
+            />
+
+            <div class="b-work__content">
+              <p>
+                Meet is a serverless, progressive web application (PWA) built
+                with React using a test-driven development (TDD) and
+                behavior-driven development (BDD). The application uses the
+                Google Calendar API to fetch upcoming tech events.
+              </p>
+
+              <p>What I did:</p>
+
+              <ul>
+                <li>Created test scenarios for each user story.</li>
+                <li>
+                  Created serverless functions to adhere to Google OAuth2
+                  authentication flow.
+                </li>
+                <li>
+                  Made use of various testing features including unit,
+                  integration, acceptance, and end-to-end testing.
+                </li>
+                <li>Transformed applications into PWA.</li>
+                <li>
+                  Made use of data visualization using the recharts library.
+                </li>
+              </ul>
             </div>
-        </section>
-    </main>
 
-    <footer class="page-footer">
-        <p>Find Me On</p>
-        <div class="social-media">
-            <a href="https://linkedin.com/in/zach-briggs-39a846230" rel="noreferrer" target="_blank"><img src="img/linkedin.svg" width="30" height="30" alt="LinkedIN"></a>
-            <a href="https://github.com/zackkb" rel="noreferrer" target="_blank"><img src="img/github.svg" width="30" height="30" alt="GitHub"></a>
-            <a href="https://twitter.com/zachkb" rel="noreferrer" target="_blank"><img src="img/twitter.svg" width="30" height="30" alt="Twitter"></a>
+            <footer class="b-work__footer">
+              <p>
+                <a href="https://github.com/zackkb/meet" class="link-teal"
+                  >Code &rarr;</a
+                >
+              </p>
+              <p>
+                <a href="https://zackkb.github.io/meet" class="link-teal"
+                  >Project &rarr;</a
+                >
+              </p>
+            </footer>
+          </article>
+
+          <article class="b-work">
+            <header class="b-work__header">
+              <h2 class="b-work__title">myFlix</h2>
+
+              <ul class="b-tags-list">
+                <li class="b-tag">React/React-Bootstrap</li>
+
+                <li class="b-tag">Node/Express</li>
+
+                <li class="b-tag">Redux</li>
+
+                <li class="b-tag">MongoDB</li>
+
+                <li class="b-tag">Parcel</li>
+
+                <li class="b-tag">SCSS/HTML/JavaScript</li>
+              </ul>
+            </header>
+
+            <img
+              src="/img/myflix.png"
+              alt="An overview of myFlix"
+              width="100%"
+              height="45%"
+            />
+
+            <div class="b-work__content">
+              <p>
+                My first full-stack project! A client-side interface for a movie
+                app based on server-side REST API and database (movie_api).
+                Users are be able to sign up, update their personal information,
+                and create a list of their favorite movies. Users will have
+                access to information about different movies, directors, and
+                genres.
+              </p>
+
+              <p>What I did:</p>
+
+              <ul>
+                <li>Created React components for each view.</li>
+                <li>Connected to a database via axios.</li>
+                <li>Used Redux for state management.</li>
+                <li>Hosted application using Heroku/Netlify.</li>
+              </ul>
+            </div>
+
+            <footer class="b-work__footer">
+              <p>
+                <a
+                  href="https://github.com/zackkb/myFlix-client"
+                  class="link-teal"
+                  >Code &rarr;</a
+                >
+              </p>
+              <p>
+                <a href="https://zachmovie.netlify.app" class="link-teal"
+                  >Project &rarr;</a
+                >
+              </p>
+            </footer>
+          </article>
+
+          <article class="b-work">
+            <header class="b-work__header">
+              <h2 class="b-work__title">movie API</h2>
+
+              <ul class="b-tags-list">
+                <li class="b-tag">MongoDB</li>
+
+                <li class="b-tag">Node</li>
+
+                <li class="b-tag">Express</li>
+
+                <li class="b-tag">Mongoose</li>
+
+                <li class="b-tag">Postman</li>
+              </ul>
+            </header>
+
+            <img
+              src="img/movie_api.png"
+              alt="An overview of the code that makes up the movie API"
+              width="100%"
+              height="45%"
+            />
+
+            <div class="b-work__content">
+              <p>
+                This is the back-end API to myFlix. This API provides endpoints
+                to access a database to receive information about specific
+                movies, and also allows a users to access a database that
+                contains images, a synopsis and information about the director
+                and movie genre. It has also endpoints for the user to
+                register/deregister, log in/out, update their user profile, and
+                add movies to a list of favorites.
+              </p>
+
+              <p>What I did:</p>
+
+              <ul>
+                <li>
+                  Created HTTP endpoints and route handlers with subsequent
+                  testing in Postman.
+                </li>
+                <li>
+                  Created and populated a non-relational database with MongoDB.
+                </li>
+                <li>
+                  Use Mongoose to build the Business Logic Layer linking the
+                  database from MongoDB to the server (and finally to the Web
+                  Browser).
+                </li>
+                <li>
+                  Implemented authentication in Node.js/Express using Passport.
+                </li>
+                <li>
+                  Implemented security measures for back-end including CORS and
+                  Bcrypt.
+                </li>
+                <li>Hosted on MongoDBAtlas (DBaaS) and HEROKU (PaaS).</li>
+                <li>Troubleshooted the deployment process to HEROKU.</li>
+              </ul>
+            </div>
+
+            <footer class="b-work__footer">
+              <p>
+                <a href="https://github.com/zackkb/movie_api" class="link-teal"
+                  >Code &rarr;</a
+                >
+              </p>
+            </footer>
+          </article>
+
+          <article class="b-work">
+            <header class="b-work__header">
+              <h2 class="b-work__title">Pokédex</h2>
+
+              <ul class="b-tags-list">
+                <li class="b-tag">HTML</li>
+
+                <li class="b-tag">CSS</li>
+
+                <li class="b-tag">JavaScript</li>
+              </ul>
+            </header>
+
+            <img
+              src="img/pokedex.png"
+              alt="An overview of the pokédex"
+              width="100%"
+              height="45%"
+            />
+
+            <div class="b-work__content">
+              <p>
+                My first JavaScript project! A digital encyclopedia of the
+                original 151 Pokémon that loads data from an external API. The
+                app displays a list of Pokémon. If the user clicks on one of the
+                Pokémon-buttons, a modal with image and data opens. Its also
+                possible to search for a specific Pokémon by name
+              </p>
+
+              <p>What I did:</p>
+
+              <ul>
+                <li>Created HTML and CSS templates.</li>
+                <li>Used Bootstrap to customize layout.</li>
+              </ul>
+            </div>
+
+            <footer class="b-work__footer">
+              <p>
+                <a
+                  href="https://github.com/zackkb/pokedex-app"
+                  class="link-teal"
+                  >Code &rarr;</a
+                >
+              </p>
+              <p>
+                <a href="https://zackkb.github.io/pokedex-app" class="link-teal"
+                  >Project &rarr;</a
+                >
+              </p>
+            </footer>
+          </article>
+
+          <article class="b-work">
+            <header class="b-work__header">
+              <h2 class="b-work__title">To-Do</h2>
+
+              <ul class="b-tags-list">
+                <li class="b-tag">jQuery</li>
+                <li class="b-tag">HTML</li>
+                <li class="b-tag">CSS</li>
+              </ul>
+            </header>
+
+            <img
+              src="img/todo.png"
+              alt="An overview of the to-do list app"
+              width="100%"
+              height="45%"
+            />
+
+            <div class="b-work__content">
+              <p>
+                This is a small web application that allows users to add items
+                to a to do list, cross out items, delete items and sort the
+                items on the list. The purpose of this app was to familiarize
+                myself with the concepts of jQuery.
+              </p>
+            </div>
+
+            <footer class="b-work__footer">
+              <p>
+                <a href="https://github.com/zackkb/to-do-list" class="link-teal"
+                  >Code &rarr;</a
+                >
+              </p>
+              <p>
+                <a href="https://zackkb.github.io/to-do-list" class="link-teal"
+                  >Project &rarr;</a
+                >
+              </p>
+            </footer>
+          </article>
         </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
-</body>
+      </main>
+      <footer class="b-site-footer" id="contact">
+        <p>Find me at:</p>
 
+        <dl class="b-social">
+          <div class="b-social__container">
+            <dt class="b-social__type">Email:</dt>
+            <dd class="b-social__handle">zackkb@gmail.com</dd>
+          </div>
+          <div class="b-social__container">
+            <dt class="b-social__type">LinkedIn:</dt>
+            <dd class="b-social__handle">
+              <a
+                href="https://linkedin.com/in/zach-briggs-39a846230"
+                rel="noreferrer"
+                target="_blank"
+                >Zach Briggs</a
+              >
+            </dd>
+          </div>
+          <div class="b-social__container">
+            <dt class="b-social__type">GitHub:</dt>
+            <dd class="b-social__handle">
+              <a
+                href="https://github.com/zackkb"
+                rel="noreferrer"
+                target="_blank"
+                >zackkb</a
+              >
+            </dd>
+          </div>
+        </dl>
+      </footer>
+    </div>
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>

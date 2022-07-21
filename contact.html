@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>Contact | Zach Briggs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
-<body>
-    <header class="page-header">
-        <a href="index.html">
-            <img src="img/logo.png" alt="logo" class="page-header__item">
-        </a>
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<body class="l-body">
+    <div class="l-wrapper">
+      <header class="b-site-header">
+          <span class="b-site-logo">ZB</span>
+          <nav class="b-site-nav">
+              <a class="b-site-nav__link" href="index.html">Home</a>
+      <a class="b-site-nav__link" href="about.html">About</a>
+      <a class="b-site-nav__link" href="work.html">Work</a>
+      <a class="b-site-nav__link" href="contact.html">Contact</a>
+  
+  </nav>
+  </header>
 
-    <main>
-        <div class="main_contact">
-            <h1>Contact</h1>
-            <div class="main_contact">
-                Zach Briggs<br>
-                913 Ridgegate Pl<br>
-                Huntsville, AL 35801<br>
-                <br>
-                Tel +1(256)394-5523<br>
-                <a href="mailto:zackkb@gmail.com?subject=test&body=This%20is%20a%20test.">Email me.</a><br>
-                <p></p>
-            </div>
+  <main role="main" class="l-main b-page">
+  
 
-            <form id="contact-form" action="contact-form.php" method="post">
-                <label class="standard label" for="name">Name<span style="color: #e90000">*</span></label>
-                <input id="name" type="text" required><br><br>
-                <label class="standard label" for="contact-email">Email<span style="color: #e90000">*</span></label>
-                <input id="contact-email" type="email" required><br><br>
-                <label class="standard label" for="message">Message</label>
-                <textarea id="message" maxlength="240" required=""></textarea><br>
-                <p></p>
-                    <input type="submit" value="Send message">
-            </form>
 
-            <p><span style="color: #e90000">*</span> = Required. Max characters limited to 240.</p>
+    <h1 class="b-page__title">Get in Touch</h1>
+    <div class="b-page__content">
+      
+
+<h1 id="say-hello">Say Hello!</h1>
+
+<p>If you&rsquo;d like to send me a message, I can be reached through various ways! If you prefer email, simply fill out the form below or send me a message directly at <code>zackkb@gmail.com</code>.</p>
+
+<div class="l-grid l-grid--two">
+<form class="b-form" action="https://formspree.io/f/xpzbvryk" method="POST">
+  <input type="hidden" name="_subject" value="[gmail.com]">
+  <div class="b-field">
+    <label for="sender" class="b-field__label">Name</label>
+    <input type="text" name="sender" id="sender" class="b-field__input" />
+  </div>
+ <div class="b-field">
+   <label for="sender-email" class="b-field__label">Email</label>
+    <input type="email" name="sender-email" id="sender-email" class="b-field__input" />
+  </div>
+  <div class="b-field">
+    <label for="message" class="b-field__label">Message</label>
+    <textarea id="message" name="message" rows="5" cols="33" class="b-field__input"></textarea>  
+  </div>
+<button type="submit" class="b-form__submit">Send Message</button>
+</form>
+<div class="l-social-container">
+  <p>Elsewhere, I can be reached at the following:</p>
+  <dl class="b-social">
+    <div class="b-social__container">
+      <dt class="b-social__type">LinkedIn:</dt>
+      <dd class="b-social__handle"><a href="https://linkedin.com/in/zach-briggs-39a846230" rel="noreferrer" target="_blank">Zach Briggs</a></dd>
+    </div>
+    <div class="b-social__container">
+      <dt class="b-social__type">GitHub:</dt>
+      <dd class="b-social__handle"><a href="https://github.com/zackkb" rel="noreferrer" target="_blank">zackkb</a></dd>
+    </div>
+  </dl>
+</div>
+
+<p></div></p>
+
+      </div>
+
+  </main>
+    <footer class="b-site-footer" id="contact">
+        <p>Find me at:</p>
+      
+        <dl class="b-social">
+          <div class="b-social__container">
+            <dt class="b-social__type">Email:</dt>
+            <dd class="b-social__handle">zackkb@gmail.com</dd>
+          </div>
+          <div class="b-social__container">
+            <dt class="b-social__type">LinkedIn:</dt>
+            <dd class="b-social__handle"><a href="https://linkedin.com/in/zach-briggs-39a846230" rel="noreferrer" target="_blank">Zach Briggs</a></dd>
+          </div>
+          <div class="b-social__container">
+            <dt class="b-social__type">GitHub:</dt>
+            <dd class="b-social__handle"><a href="https://github.com/zackkb" rel="noreferrer" target="_blank">zackkb</a></dd>
+          </div>
+        </dl>
+      </footer>
         </div>
-    </main>
+        <script src="js/tota11y.min.js"></script>
+      </body>
 
-    <footer class="page-footer">
-        <p>Find Me On</p>
-        <div class="social-media">
-            <a href="https://linkedin.com/in/zach-briggs-39a846230" rel="noreferrer" target="_blank"><img src="img/linkedin.svg" width="30" height="30" alt="LinkedIN"></a>
-            <a href="https://github.com/zackkb" rel="noreferrer" target="_blank"><img src="img/github.svg" width="30" height="30" alt="GitHub"></a>
-            <a href="https://twitter.com/zachkb" rel="noreferrer" target="_blank"><img src="img/twitter.svg" width="30" height="30" alt="Twitter"></a>
-        </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
-</body>
-
-</html>
+      </html>
