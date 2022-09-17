@@ -31,7 +31,6 @@
         <span class="b-site-logo">ZB</span>
         <nav class="b-site-nav">
           <a class="b-site-nav__link" href="index.html">Home</a>
-          <a class="b-site-nav__link" href="about.html">About</a>
           <a class="b-site-nav__link" href="work.html">Work</a>
           <a class="b-site-nav__link" href="contact.html">Contact</a>
         </nav>
@@ -40,6 +39,137 @@
       <main role="main" class="l-main b-page">
         <h1 class="b-page__title">Selected Work</h1>
         <div class="b-page__content">
+          <article class="b-work">
+            <header class="b-work__header">
+              <h2 class="b-work__title">myFlix (Angular)</h2>
+
+              <ul class="b-tags-list">
+                <li class="b-tag">Angular</li>
+
+                <li class="b-tag">Material</li>
+
+                <li class="b-tag">TypeScript</li>
+
+                <li class="b-tag">Sass</li>
+
+                <li class="b-tag">Node.js</li>
+              </ul>
+            </header>
+
+            <img
+              src="img/myFlix-angular.png"
+              alt="An overview of the Angular version of myFlix"
+            />
+
+            <div class="b-work__content">
+              <p>
+                Much like my other myFlix project, this time created using
+                Angular. The aim of this project was to build the client-side
+                using Angular, based on its existing server-side code (REST API
+                and database), with supporting documentation. The application
+                shows the user information about different movies like director,
+                genre and summary. The user can also add/delete favorite movies
+                to their personal profile once the user is registered and logged
+                in. All the user authorization and movie information is taken
+                from an external API.
+              </p>
+
+              <p>What I did:</p>
+
+              <ul>
+                <li>Set up Angular HttpClient to load data from movie API.</li>
+                <li>Created Angular Service for Consuming REST API.</li>
+                <li>Implemented services logic to make API calls</li>
+                <li>
+                  Imported models from Angular Material to serve to other
+                  components.
+                </li>
+                <li>Created components and imported routing.</li>
+                <li>
+                  Added TypeDoc documentation and ensured code is commented
+                  adhering to best practices.
+                </li>
+              </ul>
+            </div>
+
+            <footer class="b-work__footer">
+              <p>
+                <a
+                  href="https://github.com/zackkb/myFlix-Angular-client"
+                  class="link-teal"
+                  >Code &rarr;</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://zackkb.github.io/myFlix-Angular-client/welcome"
+                  class="link-teal"
+                  >Project &rarr;</a
+                >
+              </p>
+            </footer>
+          </article>
+
+          <article class="b-work">
+            <header class="b-work__header">
+              <h2 class="b-work__title">chat</h2>
+
+              <ul class="b-tags-list">
+                <li class="b-tag">React Native</li>
+
+                <li class="b-tag">Expo</li>
+
+                <li class="b-tag">Google Firebase</li>
+
+                <li class="b-tag">Gifted Chat</li>
+              </ul>
+            </header>
+
+            <img src="img/chat.png" alt="An overview of the chat-app" />
+
+            <div class="b-work__content">
+              <p>
+                A mobile chat app built with React Native and developed with
+                Expo. It is optimized for iOS and Android. Users can
+                authenticate anonymously using Google Firebase authentication.
+                Google Firestore Database is used to set up a real-time
+                database. Messages are also stored locally on the user's mobile
+                device via Async Storage, allowing users to access their
+                messages offline. Users can send messages and share images and
+                their locations.
+              </p>
+
+              <p>What I did:</p>
+
+              <ul>
+                <li>
+                  Made use of the React Native Gifted Chat library to create the
+                  UI.
+                </li>
+                <li>
+                  Used Expo as a development environment to develop and test the
+                  app.
+                </li>
+                <li>
+                  Set up Firestore database to store images, conversations, and
+                  real-time user data.
+                </li>
+                <li>
+                  Utilized the React Navigation third party library to navigate
+                  between screens.
+                </li>
+              </ul>
+            </div>
+
+            <footer class="b-work__footer">
+              <p>
+                <a href="https://github.com/zackkb/chat-app" class="link-teal"
+                  >Code &rarr;</a
+                >
+              </p>
+            </footer>
+          </article>
+
           <article class="b-work">
             <header class="b-work__header">
               <h2 class="b-work__title">Meet</h2>
@@ -59,12 +189,7 @@
               </ul>
             </header>
 
-            <img
-              src="img/meet.png"
-              alt="An overview of Meet"
-              width="650px"
-              height="300px"
-            />
+            <img src="img/meet.png" alt="An overview of Meet" />
 
             <div class="b-work__content">
               <p>
@@ -126,12 +251,7 @@
               </ul>
             </header>
 
-            <img
-              src="img/myflix.png"
-              alt="An overview of myFlix"
-              width="650px"
-              height="300px"
-            />
+            <img src="img/myflix.png" alt="An overview of myFlix" />
 
             <div class="b-work__content">
               <p>
@@ -189,8 +309,6 @@
             <img
               src="img/movie_api.png"
               alt="An overview of the code that makes up the movie API"
-              width="650px"
-              height="300px"
             />
 
             <div class="b-work__content">
@@ -253,12 +371,7 @@
               </ul>
             </header>
 
-            <img
-              src="img/pokedex.png"
-              alt="An overview of the pokédex"
-              width="650px"
-              height="300px"
-            />
+            <img src="img/pokedex.png" alt="An overview of the pokédex" />
 
             <div class="b-work__content">
               <p>
