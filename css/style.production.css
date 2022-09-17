@@ -585,8 +585,8 @@ body {
 }
 
 img {
-  float: left;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
 }
