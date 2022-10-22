@@ -634,11 +634,6 @@ img {
   width: 100%;
 }
 
-.intro {
-  display: flex;
-  justify-content: space-between;
-}
-
 .intro-content {
   margin-right: 2em;
   padding-top: 1em;
